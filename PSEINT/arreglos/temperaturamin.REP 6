@@ -1,0 +1,46 @@
+Algoritmo temperaturamin
+	Definir MX,MN,I,K Como Entero;
+	Definir MEDIA Como Real;
+	Definir D Como Caracter;
+	Dimension D(5);
+	Dimension MX(5);
+	Dimension MN(5);
+	
+	Para I<-0 Hasta 4 Con Paso 1 Hacer
+		Escribir " Ingrese los dias correspondientes por nombre ";
+		Leer D(I);
+	Fin Para
+	
+	Para I<-0 Hasta 4 Con Paso 1 Hacer
+		Escribir " Día Número ", I , D(I);
+	Fin Para
+	
+	Para I<-0 Hasta 4 Con Paso 1 Hacer
+		Escribir " Ingrese la temperatura mínima del día ", D(I);
+		Leer  MN(I);
+		
+	Fin Para
+	
+	Para I<-0 Hasta 4 Con Paso 1 Hacer
+		Escribir " LA T MINIMA DEL DIA  ", D(I) " ES DE " ,MN(I);
+		
+	Fin Para
+	
+	Para I<-0 Hasta 4 Con Paso 1 Hacer
+		Escribir " Ingrese la temperatura Máxima del día ",D(I);
+		Leer MX(I);
+	Fin Para
+	
+	Para I<-0 Hasta 4 Con Paso 1 Hacer
+		Escribir " La temperatura Máxima del día "," " , D(I ), " Es "," ", MX(I);
+	Fin Para
+	
+	Para I<-0 Hasta 4 Con Paso 1 Hacer
+		MEDIA<-(MX(I)+MN(I))/2;
+	Fin Para
+	
+	Para I<-0 Hasta 4 Con Paso 1 Hacer
+		Escribir " La temperatura Media del día " ,D(I), " Será ", MEDIA;
+	Fin Para
+	
+FinAlgoritmo

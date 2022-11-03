@@ -1,0 +1,26 @@
+Funcion RES <- MEDIA ( MX,MN,DI Por Referencia  ) 
+	Definir TEMP,i Como Real;
+	Para i<-0 Hasta DI Con Paso 1 Hacer
+		
+		TEMP<-(MX+MN)/2;
+		
+	Fin Para
+	Escribir " La temperatura media será de : ",TEMP;
+	
+Fin Funcion
+
+
+Algoritmo CLIMA
+	Definir D,MIN,MAX,RES Como Real;
+	Escribir"Programa que calcula la temperatura media de cada dia";
+	Escribir "Cargue la cantidad de días que desea saber";
+	Leer D;
+	Escribir "Ingrese la temperatura máxima del día ";
+	Leer MAX;
+	Escribir "Ingrese la temperatura minima del día ";
+	Leer MIN;
+	
+	RES = MEDIA (MAX,MIN,D) ;
+	
+	
+FinAlgoritmo

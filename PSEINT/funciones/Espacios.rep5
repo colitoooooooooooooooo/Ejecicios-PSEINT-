@@ -1,0 +1,25 @@
+Funcion RET <- Convertirespacio ( t Por Referencia )
+	Definir RET Como Caracter;
+	Definir I Como Entero;
+	Ret= " ";
+	
+	Para I<-0 Hasta Longitud(t) Con Paso 1 Hacer
+		RET= Concatenar (RET,subcadena(t,i,i));
+		RET= Concatenar (RET ," ");
+		
+	Fin Para
+	
+	
+Fin Funcion
+
+
+
+
+Algoritmo Espacios
+	Definir T Como caracter;
+	Escribir "Ingrese un texto";
+	Leer T;
+	
+	Escribir Convertirespacio(T);
+	
+FinAlgoritmo

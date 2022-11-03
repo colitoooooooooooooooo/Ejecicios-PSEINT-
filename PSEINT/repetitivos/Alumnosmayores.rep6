@@ -1,0 +1,49 @@
+Algoritmo Alumnosmayores
+	Definir AL Como Caracter;
+	Definir ED,X,I,MX Como Entero;
+	Escribir " Programa que ordena alumnos por edad";
+	Escribir "Ingrese la cantidad de alumnos";
+	Leer X;
+	Dimension AL(X);
+	Dimension ED(X);
+	
+	Para I<-0 Hasta X-1 Con Paso 1 Hacer
+		Escribir "Ingrese los nombres de los alumnos,Alumno : " ,I ;
+		Leer AL(I);
+	Fin Para
+	
+	Para I<-0 Hasta X-1 Con Paso 1 Hacer
+		Escribir " El alumno ",I , " es ",(AL[I]);
+	Fin Para
+	
+	Para I<-0 Hasta X-1 Con Paso 1 Hacer
+		Escribir " Ingrese la edad del alumno :  ",I;
+		Leer ED(I);
+		
+	Fin Para
+	
+	Para I<-0 Hasta X-1 Con Paso 1 Hacer
+		Escribir " La edad de ", (AL[I]) , " es ", ED(I);
+	Fin Para
+	
+	
+	Para I<-0 Hasta X-1 Con Paso 1 Hacer
+		Si ED(I) >=18 Entonces
+			Escribir (AL[I]), " Es mayor de edad ";
+		FinSi
+	Fin Para
+	
+	MX=ED(0);
+	Para I<-0 Hasta X-1 Con Paso 1 Hacer
+			Si ED(i) > MX Entonces
+				MX=ED(i);
+			FinSi
+		Fin Para
+		
+		Escribir " El mayor tiene ", MX;
+	
+
+
+	
+	
+FinAlgoritmo

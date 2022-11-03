@@ -1,0 +1,21 @@
+Funcion Resultado <- ESMULTIPLO(A,B)
+	Si ( A MOD B == 0 ) 
+		Escribir "El primero número " , A ," Es multiplo del segundo número " , B;
+	FinSi
+	Si  (B MOD A == 0)
+		Escribir B " Es multiplo de ", A;
+	FinSi
+	
+Fin Funcion
+
+
+Algoritmo MULTIPLOQ
+	Definir A,B,Resultado Como Entero;
+	Escribir "Ingrese un num";
+	Leer A;
+	Escribir "Ingrese otro num";
+	Leer B;
+	
+	Resultado=ESMULTIPLO(A,B);
+	
+FinAlgoritmo

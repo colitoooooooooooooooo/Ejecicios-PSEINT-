@@ -1,0 +1,19 @@
+Funcion   AREAYPER ( r, Area Por referencia, Per Por referencia)
+	
+	Area<-pi * r*2;
+	Per<-pi*r^2;
+	
+Fin Funcion
+
+
+Algoritmo Circunferencia
+	Definir R,A,P Como Real;
+	EScribir "Ingrese el radio de la circunferencia";
+	Leer R;
+	
+	AREAYPER(R,A,P);
+	Escribir "El Área es ", A , "Y el perímetro es ",P;
+	
+	
+	
+FinAlgoritmo

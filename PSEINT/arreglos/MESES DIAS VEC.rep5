@@ -1,0 +1,45 @@
+Algoritmo MESES
+	Definir M, Dias Como entero;
+	Definir Mes Como caracter;
+	Dimension Mes(12);
+	Dimension Dias(12);
+	
+	Dias(0) =31;
+	Dias(1) =28;
+	Dias(2) =31;
+	Dias(3) =30;
+	Dias(4) =31;
+	Dias(5) =30;
+	Dias(6) =31;
+	Dias(7) =31;
+	Dias(8) =30;
+	Dias(9) =31;
+	Dias(10) =30;
+	Dias(11) =31;
+	Mes(0) = "Enero";
+	Mes(1) ="Febrero";
+	Mes(2) ="Marzo";
+	Mes(3) ="Abril";
+	Mes(4) = "Mayo";
+	Mes(5) = "Junio";
+	Mes(6) = "Julio";
+	Mes(7) = "Agosto";
+	Mes(8) =" Septiembre";
+	Mes(9) = "Octubre";
+	Mes(10) = "Noviembre";
+	Mes(11) = "Diciembre";
+	
+	
+	Repetir
+		Escribir "Ingrese el numero del mes";
+		Leer M;
+		
+		Si M<1 O M>12 Entonces
+			Escribir "Numnero incorrecto";
+		FinSi
+		
+	Hasta Que M<=12 Y M>=1;
+	Escribir "El número corresponde a el mes ", Mes(M-1);
+	Escribir "Tiene ", Dias(M-1) " Días" ;
+	
+FinAlgoritmo

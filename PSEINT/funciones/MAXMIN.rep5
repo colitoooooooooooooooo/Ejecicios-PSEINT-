@@ -1,0 +1,34 @@
+Funcion RESULTADO <- MXMN ( NUM,n,MX POR REFERENCIA MN Por Referencia)
+	Definir RESULTADO,i Como Entero;
+	MX=NUM (0);
+	MN =NUM(0);
+	
+	Para i<-0 Hasta n-1 Con Paso 1 Hacer
+		Si NUM(i) > MX Entonces
+			MX=NUM(i);
+		FinSi
+		Si NUM(i) < MN Entonces
+			MN =NUM(i);
+		FinSi
+	Fin Para
+	
+Fin Funcion
+
+Algoritmo MAXMIN
+	Definir Num,N,Max,Min,RES,I Como Real;
+	
+
+	Escribir "Ingrese  la cangtidad de valores que quiere comparar";
+	Leer N;
+	Dimension Num(N);
+	
+	Para I<-0 Hasta N-1 Con Paso 1 Hacer
+		Escribir "Ingrese los Numeros ";
+		Leer Num(I);
+		
+	Fin Para
+	
+	RES=MXMN(Num,N,Max,Min );
+	Escribir " El maximo es ", Max, " Y el Minimo es ",Min;
+	
+FinAlgoritmo

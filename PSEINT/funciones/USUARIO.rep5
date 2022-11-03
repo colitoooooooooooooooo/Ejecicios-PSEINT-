@@ -1,0 +1,39 @@
+Funcion  IN<- CUENTA ( u,c,i )
+	Definir IN Como Logico;
+	Si u="USUARIO1" Y c="ASDASD" Entonces
+		IN= Verdadero ;
+	Sino 
+		IN= Falso;
+		i=i+1;
+	FinSi
+		
+Fin Funcion
+
+
+Algoritmo USUARIO
+	Definir U,C Como Caracter;
+	Definir INTENTOS Como Entero;
+	Definir in Como Logico;
+	INTENTOS=0;
+	
+	Repetir
+		Escribir "Ingrese su nombre de usuario";
+		Leer U;
+		Escribir "Ingrese su contraseña";
+		Leer C;
+		
+		in=CUENTA(U,C,INTENTOS);
+		
+		Si NO in Entonces
+			Escribir "Nombre o usuario incorrectos";
+		FinSi
+		
+	Hasta Que INTENTOS = 3 o in
+	Si in Entonces
+		Escribir "Ingresaste al sistema";
+	Sino 
+		Escribir "No ingresaste";
+	FinSi
+	
+	
+FinAlgoritmo
